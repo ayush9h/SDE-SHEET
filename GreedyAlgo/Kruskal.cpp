@@ -74,7 +74,7 @@ int main()
     {
         if (FindPar(it.u, parent) != FindPar(it.v, parent))
         {
-            cost = it.w;
+            cost += it.w;
             mst.push_back({it.u, it.v});
             Union(it.u, it.w, parent, rank);
         }
